@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Result</title>
+</head>
+<body>
+    <h1>Query Result</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>No</th>
+                <th>Il</th>
+                <th>Ilce</th>
+                <th>Semt</th>
+                <th>Mah</th>
+                <th>P_Code</th>
+                <th>Coor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in result %}
+                <tr>
+                    <td>{{ row['id'] }}</td>
+                    <td>{{ row['no'] }}</td>
+                    <td>{{ row['il'] }}</td>
+                    <td>{{ row['ilce'] }}</td>
+                    <td>{{ row['semt'] }}</td>
+                    <td>{{ row['mah'] }}</td>
+                    <td>{{ row['p_code'] }}</td>
+                    <td>{{ row['coor'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
